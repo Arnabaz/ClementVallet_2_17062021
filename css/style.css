@@ -330,4 +330,61 @@ form h2 {
     letter-spacing: -1px;
     }
   
+/* SECTION HEBERGEMENTS */
+#section-accomodations {
+    grid-row : 2 / 3;
+    background-color: var(--lightgrey);
+    padding: 40px 20px 0px 20px;
+    width: 100%;
+    height: 1400px;
+  }
+  
+    /* Partie header de la section "Hébergements" */
+    #section-accomodations header {
+      width: 100%;
+      margin-bottom: 11px;
+    }
+  
+    /* Carte de la section hébergements */
+    #section-accomodations article {
+      width: 325px;
+      height: 198px;
+      padding: 5px;
+      margin-bottom: 12px;
+      background-color: white;
+      border-radius: var(--radius);
+      line-height: 1.1;
+    }
+  
+    .figure-accomodations img {
+    width: 100%;
+    height: 114px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    }
+  
+    .figure-accomodations h2 {
+      font-size: 1.55rem;
+      padding: 10px 0px 5px 10px;
+    }
+  
+    .figure-accomodations p {
+      font-size: 1.35rem;
+      padding: 0px 0px 5px 10px;
+    }
+  
+    .figure-accomodations div {
+      font-size: 1.15rem;
+      letter-spacing: -1px;
+      padding: 5px 0px 0px 10px
+    }
+  
+  
+    /* Fin de la section "Hébergements" */
+    #end-accomodations {
+      width: 100%;
+      height: 52px;
+      padding-top: 20px;
+    }
+  
   
