@@ -387,4 +387,41 @@ form h2 {
       padding-top: 20px;
     }
   
+/* SECTION ACTIVITES */
+aside {
+    padding: 40px 20px 0px 20px;
+    width: 100%;
+    height: 1400px;
+    background-color: var(--lightgrey);
+  }
+  
+    /* Partie header de la section aside */
+    aside header {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Carte de la section aside */
+    .figure-activities {
+      width:333px ;
+      height: 190px;
+      background-color: white;
+      margin-bottom: 24px;
+      border-radius: var(--radius);
+      box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
+      cursor: pointer;
+    }
+  
+    .figure-activities img {
+      width: 100%;
+      height: 134px;
+      object-fit: cover;
+      border-radius: 20px 20px 0px 0px;
+    }
+  
+    .figure-activities h2 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      padding: 17px 0px 17px 17px;
+    }    
   
