@@ -245,6 +245,7 @@ label i {
     border-left: 0px none white;
     border-radius: 0px 50px 50px 0px;
     z-index: 1;
+    height: 48px;
 }
 
 /* Sous-partie infos de recherche */
