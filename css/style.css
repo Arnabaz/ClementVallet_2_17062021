@@ -174,7 +174,7 @@ label i {
 #search-button input {
     display: flex;
     height: 50px;
-    width: 79%;
+    width: 265px;
     font-family: "Raleway", sans-serif;
     font-size: 1.8rem;
     font-weight: 800;
@@ -191,8 +191,7 @@ label i {
     background-color: var(--blue);
     color: white;
     cursor: pointer;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     border: none;
     margin-left: -15px;
 }
