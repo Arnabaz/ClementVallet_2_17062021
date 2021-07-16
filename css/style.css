@@ -353,6 +353,7 @@ label i {
     background-color: white;
     border-radius: var(--radius);
     line-height: 1.1;
+    cursor: pointer;
 }
 
 .figure-accomodations img {
