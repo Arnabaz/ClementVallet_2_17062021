@@ -263,3 +263,71 @@ form h2 {
     margin-top: -5px;
   }
 
+/* SECTION POPULAIRES */
+#section-popular {
+    background-color: var(--grey);
+    grid-row : 1 / 2;
+    width: 100%;
+    height: 580px;
+    padding: 0px 20px 0px 20px;
+  }
+    /* Partie header de la section "POPULAIRES" */
+    #section-popular header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 40px;
+      margin-bottom: 18px;
+      font-size: 2.2rem;
+    }
+  
+    /* Carte de la section populaires */
+    #section-popular article {
+      width: 100%;
+      height: 145px;
+      background-color: white;
+      margin-bottom: 11px;
+      border-radius: var(--radius);
+      padding: 5px;
+      box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
+      cursor: pointer;
+    }
+  
+    #section-popular figure {
+      display: grid;
+      grid-template-columns: 127px 198px;
+    }
+  
+    #section-popular img {
+      grid-column: 1 / 2;
+      width: 127px;
+      height: 135px;
+      border-radius: 20px 0px 0px 20px;
+      object-fit: cover;
+    }
+  
+    #section-popular figcaption {
+      grid-column: 2 / 3;
+      padding: 12px 45px 12px 20px;
+      line-height: 1.1;
+    }
+  
+    #section-popular h2 {
+      font-size: 1.5rem;
+    }
+  
+    #section-popular p {
+      font-size: 1.35rem;
+      margin-bottom: 45px;
+    }
+  
+    #section-popular strong {
+      font-weight: normal;
+    }
+  
+    #section-popular div {
+    font-size: 1.1rem;
+    letter-spacing: -1px;
+    }
+  
+  
