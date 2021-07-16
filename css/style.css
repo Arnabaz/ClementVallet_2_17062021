@@ -5,12 +5,12 @@
 
 :root {
     font-size: 10px;
-    font-family: 'Raleway', "sans serif";
+    font-family: "Raleway", "sans serif";
     line-height: 1;
     --blue: #0065fc;
-    --lightblue: #DEEBFF;
-    --grey: #D9D9D9;
-    --lightgrey: #F2F2F2;
+    --lightblue: #deebff;
+    --grey: #d9d9d9;
+    --lightgrey: #f2f2f2;
     --radius: 20px;
 }
 
@@ -49,21 +49,21 @@ h6 {
 }
 
 main {
-  display: grid;
-  grid-template-rows: 580px 1400px;
+    display: grid;
+    grid-template-rows: 580px 1400px;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .star-blue {
-  color: var(--blue);
+    color: var(--blue);
 }
 
 .star-grey {
-  color: var(--grey);
+    color: var(--grey);
 }
 
 /* HEADER */
@@ -130,27 +130,35 @@ nav a {
     color: var(--blue);
 }
 
+/* SECTION RECHERCHE */
+#section-search {
+    margin: 15px 20px 0px 20px;
+}
 
-font-size: 1.55rem;
-line-height: 1.2;
+/* Partie header de la section "RECHERCHE" */
+#section-search header {
+    width: 100%;
+    height: 115px;
+    font-size: 1.55rem;
+    line-height: 1.2;
 }
 
 /* Partie principale de la section de recherche */
 #section-search form {
-  width: 100%;
-  height: 405px;
+    width: 100%;
+    height: 405px;
 }
 
 form h2 {
-  padding: 37.5px 0px 15px 0px;
+    padding: 37.5px 0px 15px 0px;
 }
 
-  /* Sous-partie bouton recherche */
-  #search-button {
+/* Sous-partie bouton recherche */
+#search-button {
     display: flex;
-  }
+}
 
-  #search-button label {
+#search-button label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,29 +167,29 @@ form h2 {
     height: 50px;
     border-radius: 15px 0px 0px 15px;
     font-size: 1.8rem;
-  }
+}
 
-  label i {
+label i {
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     visibility: visible;
     font-size: 1.8rem;
-  }
+}
 
-  #search-button input {
+#search-button input {
     display: flex;
     height: 50px;
     width: 79%;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.8rem;
     font-weight: bold;
     border: 1px solid var(--lightgrey);
     border-right: none;
     padding: 15px;
     margin-right: -15px;
-  }
+}
 
-  #search-button button {
+#search-button button {
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -192,28 +200,28 @@ form h2 {
     font-size: 1.8rem;
     border: none;
     margin-left: -15px;
-  }
+}
 
-  #search-button span {
+#search-button span {
     display: none;
-  }
+}
 
-  /* Partie filtres */
-  #filter-box {
+/* Partie filtres */
+#filter-box {
     display: flex;
     flex-flow: row wrap;
-  }
+}
 
-  #filter-box button {
+#filter-box button {
     display: flex;
     justify-content: center;
     margin: 5px 10px 10px 0px;
     background-color: white;
     border: none;
     cursor: pointer;
-  }
+}
 
-  #filter-box i {
+#filter-box i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,9 +233,9 @@ form h2 {
     background-color: var(--lightblue);
     font-size: 18px;
     z-index: 2;
-  }
+}
 
-  .text-filter {
+.text-filter {
     display: flex;
     align-items: center;
     padding: 10px 20px 10px 35px;
@@ -237,217 +245,216 @@ form h2 {
     border-left: 0px none white;
     border-radius: 0px 50px 50px 0px;
     z-index: 1;
-  }
+}
 
-  /* Sous-partie infos de recherche */
-  #search-info {
+/* Sous-partie infos de recherche */
+#search-info {
     display: flex;
     width: 100%;
     margin: 25px 0px 35px 0px;
     font-size: 1.6rem;
     line-height: 1.1;
-  }
+}
 
-  #search-info i {
+#search-info i {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     width: 25px;
-    height:25px;
+    height: 25px;
     font-size: 1.1rem;
     border: 1px solid var(--grey);
     border-radius: 25px;
     color: var(--blue);
     margin-right: 10px;
     margin-top: -5px;
-  }
+}
 
 /* SECTION POPULAIRES */
 #section-popular {
     background-color: var(--grey);
-    grid-row : 1 / 2;
+    grid-row: 1 / 2;
     width: 100%;
     height: 580px;
     padding: 0px 20px 0px 20px;
-  }
-    /* Partie header de la section "POPULAIRES" */
-    #section-popular header {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      padding-top: 40px;
-      margin-bottom: 18px;
-      font-size: 2.2rem;
-    }
-  
-    /* Carte de la section populaires */
-    #section-popular article {
-      width: 100%;
-      height: 145px;
-      background-color: white;
-      margin-bottom: 11px;
-      border-radius: var(--radius);
-      padding: 5px;
-      box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
-      cursor: pointer;
-    }
-  
-    #section-popular figure {
-      display: grid;
-      grid-template-columns: 127px 198px;
-    }
-  
-    #section-popular img {
-      grid-column: 1 / 2;
-      width: 127px;
-      height: 135px;
-      border-radius: 20px 0px 0px 20px;
-      object-fit: cover;
-    }
-  
-    #section-popular figcaption {
-      grid-column: 2 / 3;
-      padding: 12px 45px 12px 20px;
-      line-height: 1.1;
-    }
-  
-    #section-popular h2 {
-      font-size: 1.5rem;
-    }
-  
-    #section-popular p {
-      font-size: 1.35rem;
-      margin-bottom: 45px;
-    }
-  
-    #section-popular strong {
-      font-weight: normal;
-    }
-  
-    #section-popular div {
+}
+/* Partie header de la section "POPULAIRES" */
+#section-popular header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 40px;
+    margin-bottom: 18px;
+    font-size: 2.2rem;
+}
+
+/* Carte de la section populaires */
+#section-popular article {
+    width: 100%;
+    height: 145px;
+    background-color: white;
+    margin-bottom: 11px;
+    border-radius: var(--radius);
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
+    cursor: pointer;
+}
+
+#section-popular figure {
+    display: grid;
+    grid-template-columns: 127px 198px;
+}
+
+#section-popular img {
+    grid-column: 1 / 2;
+    width: 127px;
+    height: 135px;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+#section-popular figcaption {
+    grid-column: 2 / 3;
+    padding: 12px 45px 12px 20px;
+    line-height: 1.1;
+}
+
+#section-popular h2 {
+    font-size: 1.5rem;
+}
+
+#section-popular p {
+    font-size: 1.35rem;
+    margin-bottom: 45px;
+}
+
+#section-popular strong {
+    font-weight: normal;
+}
+
+#section-popular div {
     font-size: 1.1rem;
     letter-spacing: -1px;
-    }
-  
+}
+
 /* SECTION HEBERGEMENTS */
 #section-accomodations {
-    grid-row : 2 / 3;
+    grid-row: 2 / 3;
     background-color: var(--lightgrey);
     padding: 40px 20px 0px 20px;
     width: 100%;
     height: 1400px;
-  }
-  
-    /* Partie header de la section "Hébergements" */
-    #section-accomodations header {
-      width: 100%;
-      margin-bottom: 11px;
-    }
-  
-    /* Carte de la section hébergements */
-    #section-accomodations article {
-      width: 325px;
-      height: 198px;
-      padding: 5px;
-      margin-bottom: 12px;
-      background-color: white;
-      border-radius: var(--radius);
-      line-height: 1.1;
-    }
-  
-    .figure-accomodations img {
+}
+
+/* Partie header de la section "Hébergements" */
+#section-accomodations header {
+    width: 100%;
+    margin-bottom: 11px;
+}
+
+/* Carte de la section hébergements */
+#section-accomodations article {
+    width: 325px;
+    height: 198px;
+    padding: 5px;
+    margin-bottom: 12px;
+    background-color: white;
+    border-radius: var(--radius);
+    line-height: 1.1;
+}
+
+.figure-accomodations img {
     width: 100%;
     height: 114px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-    }
-  
-    .figure-accomodations h2 {
-      font-size: 1.55rem;
-      padding: 10px 0px 5px 10px;
-    }
-  
-    .figure-accomodations p {
-      font-size: 1.35rem;
-      padding: 0px 0px 5px 10px;
-    }
-  
-    .figure-accomodations div {
-      font-size: 1.15rem;
-      letter-spacing: -1px;
-      padding: 5px 0px 0px 10px
-    }
-  
-  
-    /* Fin de la section "Hébergements" */
-    #end-accomodations {
-      width: 100%;
-      height: 52px;
-      padding-top: 20px;
-    }
-  
+}
+
+.figure-accomodations h2 {
+    font-size: 1.55rem;
+    padding: 10px 0px 5px 10px;
+}
+
+.figure-accomodations p {
+    font-size: 1.35rem;
+    padding: 0px 0px 5px 10px;
+}
+
+.figure-accomodations div {
+    font-size: 1.15rem;
+    letter-spacing: -1px;
+    padding: 5px 0px 0px 10px;
+}
+
+/* Fin de la section "Hébergements" */
+#end-accomodations {
+    width: 100%;
+    height: 52px;
+    padding-top: 20px;
+}
+
 /* SECTION ACTIVITES */
 aside {
     padding: 40px 20px 0px 20px;
     width: 100%;
     height: 1400px;
     background-color: var(--lightgrey);
-  }
-  
-    /* Partie header de la section aside */
-    aside header {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    /* Carte de la section aside */
-    .figure-activities {
-      width:333px ;
-      height: 190px;
-      background-color: white;
-      margin-bottom: 24px;
-      border-radius: var(--radius);
-      box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
-      cursor: pointer;
-    }
-  
-    .figure-activities img {
-      width: 100%;
-      height: 134px;
-      object-fit: cover;
-      border-radius: 20px 20px 0px 0px;
-    }
-  
-    .figure-activities h2 {
-      font-size: 1.6rem;
-      font-weight: 900;
-      padding: 17px 0px 17px 17px;
-    }    
-  
+}
+
+/* Partie header de la section aside */
+aside header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Carte de la section aside */
+.figure-activities {
+    width: 333px;
+    height: 190px;
+    background-color: white;
+    margin-bottom: 24px;
+    border-radius: var(--radius);
+    box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
+    cursor: pointer;
+}
+
+.figure-activities img {
+    width: 100%;
+    height: 134px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.figure-activities h2 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding: 17px 0px 17px 17px;
+}
+
 footer {
     background-color: var(--grey);
     padding: 9px 0px 36px 30px;
     width: 100%;
     height: 485px;
-  }
-  
-  footer h1 {
+}
+
+footer h1 {
     margin-top: 36px;
     padding-bottom: 18px;
     line-height: normal;
-  }
-  
-  footer a {
+}
+
+footer a {
     font-size: 1.6rem;
     line-height: 2;
-  }
-  
-  footer ul {
+}
+
+footer ul {
     width: 100%;
-  }
-  
-  /* Correction de l'espace entre la 1ère colonne du footer et le 2ème h1 */
-  #footer-accomodations {
+}
+
+/* Correction de l'espace entre la 1ère colonne du footer et le 2ème h1 */
+#footer-accomodations {
     margin-top: 24px;
-  }
+}
