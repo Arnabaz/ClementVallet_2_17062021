@@ -98,3 +98,136 @@ nav a {
     border-bottom-color: var(--blue);
     color: var(--blue);
 }
+
+
+font-size: 1.55rem;
+line-height: 1.2;
+}
+
+/* Partie principale de la section de recherche */
+#section-search form {
+  width: 100%;
+  height: 405px;
+}
+
+form h2 {
+  padding: 37.5px 0px 15px 0px;
+}
+
+  /* Sous-partie bouton recherche */
+  #search-button {
+    display: flex;
+  }
+
+  #search-button label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgrey);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px 0px 0px 15px;
+    font-size: 1.8rem;
+  }
+
+  label i {
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    visibility: visible;
+    font-size: 1.8rem;
+  }
+
+  #search-button input {
+    display: flex;
+    height: 50px;
+    width: 79%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 1px solid var(--lightgrey);
+    border-right: none;
+    padding: 15px;
+    margin-right: -15px;
+  }
+
+  #search-button button {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.8rem;
+    border: none;
+    margin-left: -15px;
+  }
+
+  #search-button span {
+    display: none;
+  }
+
+  /* Partie filtres */
+  #filter-box {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #filter-box button {
+    display: flex;
+    justify-content: center;
+    margin: 5px 10px 10px 0px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  #filter-box i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-right: -25px;
+    border-radius: 50px;
+    color: var(--blue);
+    background-color: var(--lightblue);
+    font-size: 18px;
+    z-index: 2;
+  }
+
+  .text-filter {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 35px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: 2px solid var(--grey);
+    border-left: 0px none white;
+    border-radius: 0px 50px 50px 0px;
+    z-index: 1;
+  }
+
+  /* Sous-partie infos de recherche */
+  #search-info {
+    display: flex;
+    width: 100%;
+    margin: 25px 0px 35px 0px;
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+
+  #search-info i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 25px;
+    height:25px;
+    font-size: 1.1rem;
+    border: 1px solid var(--grey);
+    border-radius: 25px;
+    color: var(--blue);
+    margin-right: 10px;
+    margin-top: -5px;
+  }
