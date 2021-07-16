@@ -16,19 +16,18 @@ body {
 
 h1 {
     font-size: 2.2rem;
-    font-weight: 900;
+    font-weight: 700;
     padding-bottom: 10px;
 }
 
 h2 {
     font-size: 1.75rem;
-    font-weight: 900;
+    font-weight: 700;
     padding-bottom: 10px;
 }
 
 h3 {
     font-size: 1.6rem;
-    font-weight: 700;
 }
 
 h4 {
@@ -114,7 +113,7 @@ nav a {
     height: 75px;
     padding: 40px 0px 20px 0px;
     text-align: center;
-    font-weight: 900;
+    font-weight: 700;
     color: var(--blue);
 }
 
@@ -166,7 +165,7 @@ form h2 {
 
 label i {
     font-family: "Font Awesome 5 Free";
-    font-weight: bold;
+    font-weight: 700;
     visibility: visible;
     font-size: 1.8rem;
 }
@@ -177,7 +176,7 @@ label i {
     width: 79%;
     font-family: "Raleway", sans-serif;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 800;
     border: 1px solid var(--lightgrey);
     border-right: none;
     padding: 15px;
@@ -235,7 +234,7 @@ label i {
     align-items: center;
     padding: 10px 20px 10px 35px;
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 800;
     border: 2px solid var(--grey);
     border-left: 0px none white;
     border-radius: 0px 50px 50px 0px;
@@ -420,7 +419,6 @@ aside header {
 
 .figure-activities h2 {
     font-size: 1.6rem;
-    font-weight: 900;
     padding: 17px 0px 17px 17px;
 }
 
