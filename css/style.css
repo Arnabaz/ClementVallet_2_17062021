@@ -329,10 +329,6 @@ label i {
     margin-bottom: 45px;
 }
 
-#section-popular strong {
-    font-weight: normal;
-}
-
 #section-popular div {
     font-size: 1.1rem;
     letter-spacing: -1px;
@@ -432,6 +428,7 @@ aside header {
     padding: 17px 0px 17px 17px;
 }
 
+/* FOOTER */
 footer {
     background-color: var(--grey);
     padding: 9px 0px 36px 30px;
@@ -440,9 +437,9 @@ footer {
 }
 
 footer h1 {
+    font-size: 2rem;
     margin-top: 36px;
-    padding-bottom: 18px;
-    line-height: normal;
+    padding-bottom: 20px;
 }
 
 footer a {
