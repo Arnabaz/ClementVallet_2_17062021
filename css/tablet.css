@@ -1,0 +1,79 @@
+/* SECTION ACTIVITES */
+aside {
+    display: grid;
+    grid-template-areas:
+    "aside-header aside-header"
+    "aside-article-1 aside-article-2"
+    "aside-article-1 aside-article-3"
+    "aside-article-6 aside-article-4"
+    "aside-article-5 aside-article-4";
+    row-gap: 0px;
+    column-gap: 20px;
+    background-color: var(--lightgrey);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+/* Partie header de la section aside */
+aside header {
+    grid-area: aside-header;
+    line-height: 107px;
+    margin-bottom: -20px
+}
+
+#aside-article-1 {
+      grid-area: aside-article-1;
+}
+
+#aside-article-2 {
+      grid-area: aside-article-2;
+}
+
+#aside-article-3 {
+      grid-area: aside-article-3;
+}
+
+#aside-article-4 {
+      grid-area: aside-article-4;
+}
+
+#aside-article-5 {
+      grid-area: aside-article-5;
+}
+
+#aside-article-6 {
+      grid-area: aside-article-6;
+}
+
+
+/* Carte de la section aside */
+.figure-activities {
+    background-color: white;
+    border-radius: var(--radius);
+    box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
+    cursor: pointer;
+}
+
+.figure-activities img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.figure-activities h2 {
+    width: calc(100% - 18px);
+    font-size: 1.6rem;
+    line-height: 56px;
+    padding-left: 18px;
+}
+
+/* FOOTER */
+footer h1 {
+    padding-left: 50px;
+}
+
+footer ul {
+  padding-left: 50px;
+}
