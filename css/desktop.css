@@ -9,7 +9,7 @@ header nav {
 #header-logo img {
     width: 100px;
     position: relative;
-    top: 50px;
+    top: 45px;
     left: 50px;
 }
 
@@ -18,6 +18,7 @@ header nav {
     line-height: 117px;
     border-top: 3px solid var(--lightgrey);
     border-bottom: none;
+    padding-bottom: 0px;
 }
 
 #header-sign {
@@ -29,6 +30,139 @@ header nav {
 #header-accomodations:hover,
 #header-activities:hover {
     border-top-color: var(--blue);
+}
+
+/* SECTION RECHERCHE */
+/* Partie header de la section "RECHERCHE" */
+#section-search header {
+    padding: 0px 50px;
+}
+
+#section-search h1 {
+    padding: 0px;
+    line-height: 40px;
+}
+
+#section-search p:not(#search-info) {
+    padding-bottom: 20px;
+}
+
+/* Partie principale de la section de recherche */
+#section-search form {
+    width: 100%;
+}
+
+/* Sous-partie bouton recherche */
+#search-button {
+    display: flex;
+    padding-left: 20px;
+}
+
+#search-button label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgrey);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px 0px 0px 15px;
+    font-size: 1.8rem;
+}
+
+#search-button > i {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    visibility: visible;
+    font-size: 1.8rem;
+}
+
+#search-button input {
+    display: flex;
+    height: 50px;
+    width: calc(100% - 105px);
+    font-family: "Raleway", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    border: 1px solid var(--lightgrey);
+    border-right: none;
+    padding: 15px;
+}
+
+#search-button button {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border: none;
+    margin-left: -15px;
+}
+
+#search-button span {
+    display: none;
+}
+
+/* Partie filtres */
+form > h2 {
+    padding: 35px 0px 15px 20px;
+    line-height: 20px;
+}
+
+#section-search button:not(#search-button button) {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0px 15px 12.5px 20px;
+    line-height: 50px;
+}
+
+#section-search i:not(#search-button i, #search-info i) {
+    width: 50px;
+    border-radius: 24px;
+    line-height: 46px;
+    color: var(--blue);
+    background-color: var(--lightblue);
+    font-size: 18px;
+    margin-right: -25px;
+    border: 2px solid var(--lightblue);
+}
+
+.text-filter {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 2px solid var(--grey);
+    border-left: 0px none white;
+    border-radius: 0px 24px 24px 0px;
+    line-height: 44px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+/* Sous-partie infos de recherche */
+#search-info {
+    display: flex;
+    width: 100%;
+    padding: 30px 5.33% 30px 20px;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    margin-top: -12.5px;
+}
+
+#search-info i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    font-size: 1.1rem;
+    border: 1px solid var(--grey);
+    border-radius: 12.5px;
+    color: var(--blue);
+    margin-right: 10px;
+    margin-top: -5px;
 }
 
 /* SECTION ACTIVITES */

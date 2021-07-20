@@ -94,7 +94,8 @@ header nav {
 #header-accomodations,
 #header-activities {
     width: 100%;
-    line-height: 52px;
+    line-height: 35px;
+    padding-bottom: 4px;
     border-bottom: 3px solid var(--lightgrey);
     text-align: center;
 }
@@ -103,7 +104,7 @@ header nav {
     grid-area: header-sign;
     text-align: right;
     padding-right: 20px;
-    line-height: 75px;
+    line-height: 90px;
     font-weight: 700;
     color: var(--blue);
 }
@@ -115,20 +116,20 @@ header nav {
     color: var(--blue);
 }
 /* SECTION RECHERCHE */
-
 /* Partie header de la section "RECHERCHE" */
 #section-search header {
-    padding: 0 20px 35px 20px;
+    padding: 0 20px;
 }
 
 #section-search h1 {
-    height: 1.2;
-    padding: 35px 0px 21px 0px;
+    line-height: 1.2;
+    padding: 35px 0px 12px 0px;
 }
 
 #section-search p:not(#search-info) {
     font-size: 1.55rem;
-    line-height: 15px;
+    line-height: 20px;
+    padding-bottom: 30px;
 }
 
 /* Partie principale de la section de recherche */
