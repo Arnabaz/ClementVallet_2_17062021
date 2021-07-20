@@ -116,8 +116,6 @@ header nav {
     color: var(--blue);
 }
 /* SECTION RECHERCHE */
-#section-search {
-}
 
 /* Partie header de la section "RECHERCHE" */
 #section-search header {
@@ -137,7 +135,6 @@ header nav {
 /* Partie principale de la section de recherche */
 #section-search form {
     width: 100%;
-    height: ;
 }
 
 /* Sous-partie bouton recherche */
