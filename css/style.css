@@ -484,29 +484,60 @@ aside header {
 }
 
 /* FOOTER */
+#footer-about {
+    grid-area: footer-about-h1;
+    padding-top: 40px;
+}
+
+#footer-about + ul {
+    grid-area: footer-about-ul;
+    padding-bottom: 24px;
+}
+
+#footer-accomodations {
+    grid-area: footer-accomodations-h1;
+}
+
+#footer-accomodations + ul {
+    grid-area: footer-accomodations-ul;
+    padding-bottom: 35px;
+}
+
+#footer-assistance {
+    grid-area: footer-assistance-h1;
+}
+
+#footer-assistance + ul {
+    grid-area: footer-assistance-ul;
+    padding-bottom: 35px;
+}
+
 footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "footer-about-h1"
+        "footer-about-ul"
+        "footer-accomodations-h1"
+        "footer-accomodations-ul"
+        "footer-assistance-h1"
+        "footer-assistance-ul";
     background-color: var(--grey);
-    padding: 9px 0px 36px 30px;
-    width: 100%;
-    height: 485px;
 }
 
 footer h1 {
-    font-size: 2rem;
-    margin-top: 36px;
-    padding-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-left: 30px;
+    width: 100%;
+    line-height: 40px;
 }
 
 footer a {
     font-size: 1.6rem;
-    line-height: 2;
+    line-height: 32px;
 }
 
 footer ul {
-    width: 100%;
-}
-
-/* Correction de l'espace entre la 1ère colonne du footer et le 2ème h1 */
-#footer-accomodations {
-    margin-top: 24px;
+    padding-left: 30px;
 }
