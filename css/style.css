@@ -415,24 +415,56 @@ form > h2 {
 
 /* SECTION ACTIVITES */
 aside {
-    padding: 40px 20px 0px 20px;
-    width: 100%;
-    height: 1400px;
+    display: grid;
+    grid-template-areas:
+        "aside-header"
+        "aside-article-1"
+        "aside-article-2"
+        "aside-article-3"
+        "aside-article-4"
+        "aside-article-5"
+        "aside-article-6";
+    row-gap: 20px;
     background-color: var(--lightgrey);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
 }
 
 /* Partie header de la section aside */
 aside header {
-    width: 100%;
-    margin-bottom: 20px;
+    grid-area: aside-header;
+    line-height: 107px;
+    margin-bottom: -20px;
+}
+
+#aside-article-1 {
+    grid-area: aside-article-1;
+}
+
+#aside-article-2 {
+    grid-area: aside-article-2;
+}
+
+#aside-article-3 {
+    grid-area: aside-article-3;
+}
+
+#aside-article-4 {
+    grid-area: aside-article-4;
+}
+
+#aside-article-5 {
+    grid-area: aside-article-5;
+}
+
+#aside-article-6 {
+    grid-area: aside-article-6;
 }
 
 /* Carte de la section aside */
 .figure-activities {
-    width: 333px;
-    height: 190px;
     background-color: white;
-    margin-bottom: 24px;
     border-radius: var(--radius);
     box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
     cursor: pointer;
@@ -447,7 +479,8 @@ aside header {
 
 .figure-activities h2 {
     font-size: 1.6rem;
-    padding: 17px 0px 17px 17px;
+    line-height: 56px;
+    padding-left: 18px;
 }
 
 /* FOOTER */
