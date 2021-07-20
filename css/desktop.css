@@ -1,10 +1,43 @@
+/* HEADER */
+header nav {
+    font-size: 1.55rem;
+    display: grid;
+    grid-template-columns: auto repeat(3, 162px);
+    grid-template-areas: "header-logo header-accomodations header-activities header-sign";
+}
+
+#header-logo img {
+    width: 100px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#header-accomodations,
+#header-activities {
+    line-height: 117px;
+    border-top: 3px solid var(--lightgrey);
+    border-bottom: none;
+}
+
+#header-sign {
+    padding-right: 75px;
+    line-height: 117px;
+}
+
+/* Effet de survol sur les champs "Hébergements" et "Activités"*/
+#header-accomodations:hover,
+#header-activities:hover {
+    border-top-color: var(--blue);
+}
+
 /* SECTION ACTIVITES */
 aside {
     display: grid;
     grid-template-areas:
-    "aside-header aside-header aside-header aside-header"
-    "aside-article-1 aside-article-2 aside-article-4 aside-article-5"
-    "aside-article-1 aside-article-3 aside-article-4 aside-article-6";
+        "aside-header aside-header aside-header aside-header"
+        "aside-article-1 aside-article-2 aside-article-4 aside-article-5"
+        "aside-article-1 aside-article-3 aside-article-4 aside-article-6";
     row-gap: 0px;
     column-gap: 20px;
     background-color: var(--lightgrey);
@@ -17,35 +50,34 @@ aside {
 aside header {
     grid-area: aside-header;
     line-height: 107px;
-    margin-bottom: -20px
+    margin-bottom: -20px;
 }
 
 #aside-article-1 {
-      grid-area: aside-article-1;
-      height: 390px;
-      object-fit: cover;
+    grid-area: aside-article-1;
+    height: 390px;
+    object-fit: cover;
 }
 
 #aside-article-2 {
-      grid-area: aside-article-2;
+    grid-area: aside-article-2;
 }
 
 #aside-article-3 {
-      grid-area: aside-article-3;
+    grid-area: aside-article-3;
 }
 
 #aside-article-4 {
-      grid-area: aside-article-4;
+    grid-area: aside-article-4;
 }
 
 #aside-article-5 {
-      grid-area: aside-article-5;
+    grid-area: aside-article-5;
 }
 
 #aside-article-6 {
-      grid-area: aside-article-6;
+    grid-area: aside-article-6;
 }
-
 
 /* Carte de la section aside */
 .figure-activities {
@@ -68,8 +100,8 @@ aside header {
 
 /* FOOTER */
 #footer-about + ul {
-  grid-area: footer-about-ul;
-  padding-bottom: 44px;
+    grid-area: footer-about-ul;
+    padding-bottom: 44px;
 }
 
 #footer-accomodations {
@@ -77,8 +109,7 @@ aside header {
 }
 
 #footer-accomodations + ul {
-  grid-area: footer-accomodations-ul;
-
+    grid-area: footer-accomodations-ul;
 }
 
 #footer-assistance {
@@ -86,8 +117,7 @@ aside header {
 }
 
 #footer-assistance + ul {
-  grid-area: footer-assistance-ul;
-
+    grid-area: footer-assistance-ul;
 }
 
 footer {
@@ -95,14 +125,10 @@ footer {
     grid-template-columns: 31.25% 31.25% 37.25%;
     grid-template-rows: auto;
     grid-template-areas:
-    "footer-about-h1 footer-accomodations-h1 footer-assistance-h1"
-    "footer-about-ul footer-accomodations-ul footer-assistance-ul";
+        "footer-about-h1 footer-accomodations-h1 footer-assistance-h1"
+        "footer-about-ul footer-accomodations-ul footer-assistance-ul";
 }
 
 footer h1 {
-  padding-top: 40px;
-}
-
-footer ul {
-
+    padding-top: 40px;
 }

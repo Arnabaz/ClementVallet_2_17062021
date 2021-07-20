@@ -2,11 +2,11 @@
 aside {
     display: grid;
     grid-template-areas:
-    "aside-header aside-header"
-    "aside-article-1 aside-article-2"
-    "aside-article-1 aside-article-3"
-    "aside-article-6 aside-article-4"
-    "aside-article-5 aside-article-4";
+        "aside-header aside-header"
+        "aside-article-1 aside-article-2"
+        "aside-article-1 aside-article-3"
+        "aside-article-6 aside-article-4"
+        "aside-article-5 aside-article-4";
     row-gap: 0px;
     column-gap: 20px;
     background-color: var(--lightgrey);
@@ -19,33 +19,32 @@ aside {
 aside header {
     grid-area: aside-header;
     line-height: 107px;
-    margin-bottom: -20px
+    margin-bottom: -20px;
 }
 
 #aside-article-1 {
-      grid-area: aside-article-1;
+    grid-area: aside-article-1;
 }
 
 #aside-article-2 {
-      grid-area: aside-article-2;
+    grid-area: aside-article-2;
 }
 
 #aside-article-3 {
-      grid-area: aside-article-3;
+    grid-area: aside-article-3;
 }
 
 #aside-article-4 {
-      grid-area: aside-article-4;
+    grid-area: aside-article-4;
 }
 
 #aside-article-5 {
-      grid-area: aside-article-5;
+    grid-area: aside-article-5;
 }
 
 #aside-article-6 {
-      grid-area: aside-article-6;
+    grid-area: aside-article-6;
 }
-
 
 /* Carte de la section aside */
 .figure-activities {
@@ -75,5 +74,5 @@ footer h1 {
 }
 
 footer ul {
-  padding-left: 50px;
+    padding-left: 50px;
 }

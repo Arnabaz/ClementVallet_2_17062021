@@ -62,7 +62,6 @@ a {
 /* HEADER */
 body > header {
     width: auto;
-    height: 130px;
 }
 
 header nav {
@@ -95,7 +94,7 @@ header nav {
 #header-accomodations,
 #header-activities {
     width: 100%;
-    line-height: 55px;
+    line-height: 52px;
     border-bottom: 3px solid var(--lightgrey);
     text-align: center;
 }
