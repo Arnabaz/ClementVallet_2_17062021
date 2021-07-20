@@ -133,10 +133,6 @@ header nav {
 }
 
 /* Partie principale de la section de recherche */
-#section-search form {
-    width: 100%;
-}
-
 /* Sous-partie bouton recherche */
 #search-button {
     display: flex;
