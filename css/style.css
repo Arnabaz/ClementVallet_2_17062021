@@ -265,9 +265,10 @@ form > h2 {
 #section-popular header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding-top: 40px;
-    margin-bottom: 18px;
+    padding-top: 15px;
+    line-height: 75px;
     font-size: 2.2rem;
 }
 
@@ -285,13 +286,13 @@ form > h2 {
 
 #section-popular figure {
     display: grid;
-    grid-template-columns: 127px 198px;
+    grid-template-columns: 127px 1fr;
 }
 
 #section-popular img {
     grid-column: 1 / 2;
     width: 127px;
-    height: 135px;
+    height: 138px;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
 }
