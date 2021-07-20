@@ -321,26 +321,61 @@ form > h2 {
 #section-accomodations {
     grid-row: 2 / 3;
     background-color: var(--lightgrey);
-    padding: 40px 20px 0px 20px;
     width: 100%;
-    height: 1400px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto repeat(6, 1fr) auto;
+    grid-template-areas:
+        "accomodations-header"
+        "accomodations-article-1"
+        "accomodations-article-2"
+        "accomodations-article-3"
+        "accomodations-article-4"
+        "accomodations-article-5"
+        "accomodations-article-6"
+        "accomodations-end";
+    row-gap: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#accomodations-article-1 {
+    grid-area: accomodations-article-1;
+}
+
+#accomodations-article-2 {
+    grid-area: accomodations-article-2;
+}
+
+#accomodations-article-3 {
+    grid-area: accomodations-article-3;
+}
+
+#accomodations-article-4 {
+    grid-area: accomodations-article-4;
+}
+
+#accomodations-article-5 {
+    grid-area: accomodations-article-5;
+}
+
+#accomodations-article-6 {
+    grid-area: accomodations-article-6;
 }
 
 /* Partie header de la section "Hébergements" */
 #section-accomodations header {
+    grid-area: accomodations-header;
     width: 100%;
-    margin-bottom: 11px;
+    line-height: 90px;
+    margin-bottom: -12px;
 }
 
 /* Carte de la section hébergements */
 #section-accomodations article {
-    width: 325px;
-    height: 198px;
-    padding: 5px;
-    margin-bottom: 12px;
+    width: 100%;
     background-color: white;
     border-radius: var(--radius);
-    line-height: 1.1;
     cursor: pointer;
 }
 
@@ -353,25 +388,29 @@ form > h2 {
 
 .figure-accomodations h2 {
     font-size: 1.55rem;
-    padding: 10px 0px 5px 10px;
+    padding-left: 10px;
+    line-height: 30px;
 }
 
 .figure-accomodations p {
     font-size: 1.35rem;
-    padding: 0px 0px 5px 10px;
+    padding-left: 10px;
+    line-height: 20px;
 }
 
 .figure-accomodations div {
     font-size: 1.15rem;
     letter-spacing: -1px;
-    padding: 5px 0px 0px 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
 }
 
 /* Fin de la section "Hébergements" */
 #end-accomodations {
+    grid-area: accomodations-end;
     width: 100%;
-    height: 52px;
-    padding-top: 20px;
+    line-height: 78px;
 }
 
 /* SECTION ACTIVITES */
