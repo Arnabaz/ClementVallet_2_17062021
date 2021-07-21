@@ -43,7 +43,6 @@ h6 {
 
 main {
     display: grid;
-    grid-template-rows: 580px 1400px;
 }
 
 a {
@@ -70,17 +69,18 @@ header nav {
     grid-template-areas:
         "header-logo header-sign"
         "header-accomodations header-activities";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 43px;
 }
 
 #header-logo {
     grid-area: header-logo;
+    margin: 22px 0px 0px 20px;
 }
 
 #header-logo img {
-    width: 100px;
-    position: relative;
-    top: 22px;
-    left: 20px;
+    width: auto;
+    height: 46px;
 }
 
 #header-accomodations {
@@ -93,9 +93,7 @@ header nav {
 
 #header-accomodations,
 #header-activities {
-    width: 100%;
-    line-height: 35px;
-    padding-bottom: 4px;
+    line-height: 34px;
     border-bottom: 3px solid var(--lightgrey);
     text-align: center;
 }
@@ -116,14 +114,14 @@ header nav {
     color: var(--blue);
 }
 /* SECTION RECHERCHE */
-/* Partie header de la section "RECHERCHE" */
-#section-search header {
+#section-search {
     padding: 0 20px;
 }
 
+/* Partie header de la section "RECHERCHE" */
 #section-search h1 {
     line-height: 1.2;
-    padding: 35px 0px 12px 0px;
+    padding: 30px 0px 15px 0px;
 }
 
 #section-search p:not(#search-info) {
@@ -136,7 +134,6 @@ header nav {
 /* Sous-partie bouton recherche */
 #search-button {
     display: flex;
-    padding-left: 20px;
 }
 
 #search-button label {
@@ -160,7 +157,7 @@ header nav {
 #search-button input {
     display: flex;
     height: 50px;
-    width: calc(100% - 105px);
+    width: calc(100% - 85px);
     font-family: "Raleway", sans-serif;
     font-size: 1.8rem;
     font-weight: 800;
@@ -187,48 +184,43 @@ header nav {
 
 /* Partie filtres */
 form > h2 {
-    padding: 35px 0px 15px 20px;
+    padding: 35px 0px 15px 0px;
     line-height: 20px;
 }
 
 #section-search button:not(#search-button button) {
+    height: 50px;
     background-color: white;
-    border: none;
+    border: 2px solid var(--grey);
+    border-radius: 25px;
     cursor: pointer;
-    padding: 0px 15px 12.5px 20px;
-    line-height: 50px;
+    margin: 0px 10px 13px 0px;
 }
 
 #section-search i:not(#search-button i, #search-info i) {
     width: 50px;
-    border-radius: 24px;
+    border-radius: 25px;
     line-height: 46px;
     color: var(--blue);
     background-color: var(--lightblue);
     font-size: 18px;
-    margin-right: -25px;
+    margin: -2px;
     border: 2px solid var(--lightblue);
 }
 
 .text-filter {
-    display: inline-block;
     font-size: 1.5rem;
     font-weight: 700;
-    border: 2px solid var(--grey);
-    border-left: 0px none white;
-    border-radius: 0px 24px 24px 0px;
-    line-height: 44px;
-    padding-left: 30px;
-    padding-right: 15px;
+    padding: 0 15px;
 }
+
 /* Sous-partie infos de recherche */
 #search-info {
     display: flex;
     width: 100%;
-    padding: 30px 5.33% 30px 20px;
+    padding: 25px 5.33% 35px 20px;
     font-size: 1.6rem;
     line-height: 1.1;
-    margin-top: -12.5px;
 }
 
 #search-info i {
@@ -248,33 +240,46 @@ form > h2 {
 
 /* SECTION POPULAIRES */
 #section-popular {
+    display: grid;
+    grid-template-areas:
+        "popular-header"
+        "popular-article-1"
+        "popular-article-2"
+        "popular-article-3";
+    row-gap: 20px;
     background-color: var(--grey);
     grid-row: 1 / 2;
-    width: 100%;
-    height: 580px;
-    padding: 0px 20px 0px 20px;
+    padding: 20px;
 }
+
 /* Partie header de la section "POPULAIRES" */
 #section-popular header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding-top: 15px;
-    line-height: 75px;
+    grid-area: popular-header;
     font-size: 2.2rem;
 }
 
 /* Carte de la section populaires */
 #section-popular article {
-    width: 100%;
-    height: 145px;
     background-color: white;
-    margin-bottom: 11px;
     border-radius: var(--radius);
     padding: 5px;
     box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
     cursor: pointer;
+}
+
+#popular-article-1 {
+    grid-area: popular-article-1;
+}
+
+#popular-article-2 {
+    grid-area: popular-article-2;
+}
+
+#popular-article-3 {
+    grid-area: popular-article-3;
 }
 
 #section-popular figure {
@@ -292,22 +297,25 @@ form > h2 {
 
 #section-popular figcaption {
     grid-column: 2 / 3;
-    padding: 12px 45px 12px 20px;
+    padding: 0px 45px 0px 20px;
     line-height: 1.1;
 }
 
 #section-popular h2 {
     font-size: 1.5rem;
+    padding-top: 12px;
 }
 
 #section-popular p {
     font-size: 1.35rem;
-    margin-bottom: 45px;
+    line-height: 35px;
 }
 
 #section-popular div {
+    padding-top: 30px;
     font-size: 1.1rem;
     letter-spacing: -1px;
+    line-height: 28px;
 }
 
 /* SECTION HEBERGEMENTS */
@@ -328,8 +336,7 @@ form > h2 {
         "accomodations-article-6"
         "accomodations-end";
     row-gap: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 #accomodations-article-1 {

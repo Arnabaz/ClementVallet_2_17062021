@@ -1,29 +1,32 @@
 /* HEADER */
 header nav {
-    font-size: 1.55rem;
     display: grid;
-    grid-template-columns: auto repeat(3, 162px);
-    grid-template-areas: "header-logo header-accomodations header-activities header-sign";
+    grid-template-columns: 200px auto repeat(3, 162px);
+    grid-template-areas: "header-logo . header-accomodations header-activities header-sign";
+    grid-template-rows: auto;
+}
+
+#header-logo {
+    margin: 37px 50px;
 }
 
 #header-logo img {
-    width: 100px;
-    position: relative;
-    top: 45px;
-    left: 50px;
+    width: auto;
+    height: 46px;
 }
 
 #header-accomodations,
 #header-activities {
-    line-height: 117px;
-    border-top: 3px solid var(--lightgrey);
+    line-height: 118px;
+    border-top: 2px solid var(--lightgrey);
     border-bottom: none;
     padding-bottom: 0px;
 }
 
 #header-sign {
+    margin-top: 2px;
     padding-right: 75px;
-    line-height: 117px;
+    line-height: 118px;
 }
 
 /* Effet de survol sur les champs "Hébergements" et "Activités"*/
@@ -33,9 +36,11 @@ header nav {
 }
 
 /* SECTION RECHERCHE */
+#section-search {
+    padding: 0px 50px;
+}
 /* Partie header de la section "RECHERCHE" */
 #section-search header {
-    padding: 0px 50px;
 }
 
 #section-search h1 {
@@ -48,9 +53,12 @@ header nav {
 }
 
 /* Partie principale de la section de recherche */
+#section-search {
+    padding: 0 50px;
+}
+
 /* Sous-partie bouton recherche */
 #search-button {
-    padding-left: 50px;
 }
 
 #search-button i:not(label i) {
@@ -58,7 +66,7 @@ header nav {
 }
 
 #search-button input {
-    width: calc(100% - 105px);
+    width: calc(100% - 85px);
     max-width: 255px;
 }
 
@@ -78,8 +86,6 @@ header nav {
 /* Partie filtres */
 form > h2 {
     display: inline-block;
-    padding: 0px 0px 0px 60px;
-    line-height: 20px;
 }
 
 #section-search button:not(#search-button button) {
