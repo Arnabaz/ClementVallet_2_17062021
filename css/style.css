@@ -70,7 +70,7 @@ header nav {
         "header-logo header-sign"
         "header-accomodations header-activities";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90px 43px;
+    grid-template-rows: 90px 42px;
 }
 
 #header-logo {
@@ -120,7 +120,7 @@ header nav {
 
 /* Partie header de la section "RECHERCHE" */
 #section-search h1 {
-    line-height: 1.2;
+    line-height: 27.5px;
     padding: 30px 0px 15px 0px;
 }
 
@@ -211,16 +211,16 @@ form > h2 {
 .text-filter {
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 0 15px;
+    padding: 0 20px 0 10px;
 }
 
 /* Sous-partie infos de recherche */
 #search-info {
     display: flex;
-    width: 100%;
-    padding: 25px 5.33% 35px 20px;
+    padding: 35px 0;
     font-size: 1.6rem;
-    line-height: 1.1;
+    line-height: 18px;
+    margin-top: -12px;
 }
 
 #search-info i {
@@ -500,7 +500,7 @@ aside header {
 
 #footer-accomodations + ul {
     grid-area: footer-accomodations-ul;
-    padding-bottom: 35px;
+    padding-bottom: 36px;
 }
 
 #footer-assistance {
@@ -509,7 +509,7 @@ aside header {
 
 #footer-assistance + ul {
     grid-area: footer-assistance-ul;
-    padding-bottom: 35px;
+    padding-bottom: 42px;
 }
 
 footer {
@@ -534,7 +534,7 @@ footer h1 {
 }
 
 footer a {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     line-height: 32px;
 }
 

@@ -37,15 +37,11 @@ header nav {
 
 /* SECTION RECHERCHE */
 #section-search {
-    padding: 0px 50px;
+    padding: 0px 20px 0 50px;
 }
 /* Partie header de la section "RECHERCHE" */
-#section-search header {
-}
-
 #section-search h1 {
-    padding: 0px;
-    line-height: 40px;
+    padding: 10px 0px 2.5px 0px;
 }
 
 #section-search p:not(#search-info) {
@@ -53,10 +49,6 @@ header nav {
 }
 
 /* Partie principale de la section de recherche */
-#section-search {
-    padding: 0 50px;
-}
-
 /* Sous-partie bouton recherche */
 #search-button {
 }
@@ -66,7 +58,6 @@ header nav {
 }
 
 #search-button input {
-    width: calc(100% - 85px);
     max-width: 255px;
 }
 
@@ -86,22 +77,26 @@ header nav {
 /* Partie filtres */
 form > h2 {
     display: inline-block;
+    padding: 45px 37.5px 15px 10px;
 }
 
 #section-search button:not(#search-button button) {
-    padding: 30px 15px 0px 20px;
+    margin: 0px 20px 13px 0px;
+}
+
+.text-filter {
+    font-size: 1.75rem;
 }
 
 /* Sous-partie infos de recherche */
 #search-info {
-    margin: 0px;
-    padding: 0px 0px 0px 50px;
+    padding: 0;
     line-height: 95px;
     align-items: center;
 }
 
 #search-info i {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px;
 }
 
 /* SECTION ACTIVITES */
@@ -173,24 +168,7 @@ aside header {
 
 /* FOOTER */
 #footer-about + ul {
-    grid-area: footer-about-ul;
-    padding-bottom: 44px;
-}
-
-#footer-accomodations {
-    grid-area: footer-accomodations-h1;
-}
-
-#footer-accomodations + ul {
-    grid-area: footer-accomodations-ul;
-}
-
-#footer-assistance {
-    grid-area: footer-assistance-h1;
-}
-
-#footer-assistance + ul {
-    grid-area: footer-assistance-ul;
+    padding-bottom: 42px;
 }
 
 footer {
