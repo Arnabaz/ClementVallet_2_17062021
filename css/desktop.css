@@ -1,3 +1,10 @@
+main {
+    display: grid;
+    grid-template-columns: 880px 420px;
+    column-gap: 40px;
+    padding: 0 50px;
+}
+
 /* HEADER */
 header nav {
     display: grid;
@@ -50,9 +57,6 @@ header nav {
 
 /* Partie principale de la section de recherche */
 /* Sous-partie bouton recherche */
-#search-button {
-}
-
 #search-button i:not(label i) {
     display: none;
 }
@@ -99,6 +103,21 @@ form > h2 {
     margin: 0px 10px;
 }
 
+/* SECTION POPULAIRES */
+#section-popular {
+    background-color: var(--lightgrey);
+    border-radius: 25px;
+    grid-columns: 2 / 3;
+    grid-row: unset;
+}
+
+/* SECTION HEBERGEMENTS */
+#section-accomodations {
+    grid-column: 1 / 2;
+    grid-row: unset;
+    border-radius: 25px;
+}
+
 /* SECTION ACTIVITES */
 aside {
     display: grid;
@@ -108,7 +127,7 @@ aside {
         "aside-article-1 aside-article-3 aside-article-4 aside-article-6";
     row-gap: 0px;
     column-gap: 20px;
-    background-color: var(--lightgrey);
+    background-color: white;
     padding-left: 3.5%;
     padding-right: 3.5%;
     padding-bottom: 60px;
