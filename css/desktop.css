@@ -107,7 +107,7 @@ form > h2 {
 #section-popular {
     background-color: var(--lightgrey);
     border-radius: 25px;
-    grid-columns: 2 / 3;
+    grid-column: 2 / 3;
     grid-row: unset;
 }
 
