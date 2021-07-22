@@ -302,7 +302,6 @@ form > h2 {
 
 #section-popular figcaption {
     grid-column: 2 / 3;
-    max-height: 135px;
     min-width: 130.5px;
     max-width: 170px;
 }

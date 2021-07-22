@@ -121,8 +121,18 @@ form > h2 {
     border-radius: 25px;
     grid-column: 2 / 3;
     grid-row: unset;
-    padding: 40px 9.28%;
+    grid-template-areas:
+        "popular-header"
+        "popular-article-1"
+        "popular-article-2"
+        "popular-article-3";
+    grid-template-columns: unset;
+    grid-template-rows: unset;
     row-gap: 32px;
+    column-gap: unset;
+    background-color: var(--grey);
+    grid-row: 1 / 2;
+    padding: 40px 9.28%;
 }
 
 /* Partie header de la section "POPULAIRES" */
@@ -135,13 +145,12 @@ form > h2 {
 }
 
 /* Carte de la section populaires */
-#section-popular figcaption {
-    min-width: 130.5px;
-    max-width: 170px;
+#popular-article-2 img {
+    height: 135px;
 }
 
-#section-popular div {
-    position: bottom;
+#popular-article-2 div {
+    margin-top: 40px;
 }
 
 /* SECTION HEBERGEMENTS */
