@@ -1,8 +1,10 @@
 @media screen and (max-width: 1210px) {
-    h2:not(#section-search h2, #end-accomodations) {
+    .figure-accomodations h2,
+    .figure-activities h2,
+    #section-popular h2 {
         font-size: 1.3rem;
-        font-weight: 700;
     }
+
     #section-accomodations p,
     #section-popular p {
         font-size: 1.1rem;
@@ -39,7 +41,7 @@ header nav {
     line-height: 118px;
     border-top: 2px solid var(--grey);
     border-bottom: none;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 #header-sign {
@@ -56,11 +58,11 @@ header nav {
 
 /* SECTION RECHERCHE */
 #section-search {
-    padding: 0px 20px 0 50px;
+    padding: 0 20px 0 50px;
 }
 /* Partie header de la section "RECHERCHE" */
 #section-search h1 {
-    padding: 10px 0px 2.5px 0px;
+    padding: 10px 0 2.5px 0;
 }
 
 #section-search p:not(#search-info) {
@@ -74,8 +76,8 @@ form > h2 {
     padding: 45px 37.5px 15px 10px;
 }
 
-#section-search button:not(#search-button button) {
-    margin: 0px 20px 13px 0px;
+.filter-button {
+    margin: 0 20px 13px 0;
 }
 
 .text-filter {
@@ -90,7 +92,7 @@ form > h2 {
 }
 
 #search-info i {
-    margin: 0px 10px;
+    margin: 0 10px;
 }
 
 /* SECTION POPULAIRES */
@@ -108,8 +110,7 @@ form > h2 {
     grid-template-rows: unset;
     row-gap: 32px;
     column-gap: unset;
-    background-color: var(--grey);
-    grid-row: 1 / 2;
+
     padding: 40px 9.28%;
 }
 
@@ -150,7 +151,7 @@ form > h2 {
 
 #section-accomodations h1 {
     line-height: 25px;
-    padding: 0px 0 5px 0px;
+    padding: 0 0 5px 0;
 }
 
 .figure-accomodations img {
@@ -163,7 +164,7 @@ form > h2 {
 }
 
 #end-accomodations {
-    padding: 10px 0px 7px 0px;
+    padding: 10px 0 7px 0;
     line-height: 20px;
 }
 
@@ -175,7 +176,7 @@ aside {
         "aside-header aside-header aside-header aside-header"
         "aside-article-1 aside-article-2 aside-article-4 aside-article-5"
         "aside-article-1 aside-article-3 aside-article-4 aside-article-6";
-    row-gap: 0px;
+    row-gap: 0;
     column-gap: 3%;
     padding: 60px 3.5%;
 }

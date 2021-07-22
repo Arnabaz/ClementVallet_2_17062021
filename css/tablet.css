@@ -2,7 +2,7 @@
 
 /* SECTION RECHERCHE */
 /* Sous-partie bouton recherche */
-#search-button i:not(label i) {
+.fa-search {
     display: none;
 }
 
@@ -12,8 +12,8 @@
 
 #search-button button {
     width: 135px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     background-color: var(--blue);
     font-size: 1.8rem;
 }

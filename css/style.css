@@ -1,6 +1,6 @@
 :root {
     font-size: 10px;
-    font-family: "Raleway", "sans serif";
+    font-family: "Raleway", sans serif;
     line-height: 1;
     --blue: #0065fc;
     --lightblue: #deebff;
@@ -76,7 +76,7 @@ header nav {
 
 #header-logo {
     grid-area: header-logo;
-    margin: 22px 0px 0px 20px;
+    margin: 22px 0 0 20px;
 }
 
 #header-logo img {
@@ -122,7 +122,7 @@ header nav {
 /* Partie header de la section "RECHERCHE" */
 #section-search h1 {
     line-height: 27.5px;
-    padding: 30px 0px 15px 0px;
+    padding: 30px 0 15px 0;
 }
 
 #section-search p:not(#search-info) {
@@ -144,14 +144,7 @@ header nav {
     background-color: var(--grey);
     width: 50px;
     height: 50px;
-    border-radius: 15px 0px 0px 15px;
-    font-size: 1.8rem;
-}
-
-#search-button > i {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 700;
-    visibility: visible;
+    border-radius: 15px 0 0 15px;
     font-size: 1.8rem;
 }
 
@@ -185,20 +178,20 @@ header nav {
 
 /* Partie filtres */
 form > h2 {
-    padding: 35px 0px 15px 0px;
+    padding: 35px 0 15px 0;
     line-height: 20px;
 }
 
-#section-search button:not(#search-button button) {
+.filter-button {
     height: 50px;
     background-color: white;
     border: 2px solid var(--darkgrey);
     border-radius: 25px;
     cursor: pointer;
-    margin: 0px 10px 13px 0px;
+    margin: 0 10px 13px 0;
 }
 
-#section-search i:not(#search-button i, #search-info i) {
+.filter-button i {
     width: 50px;
     border-radius: 25px;
     line-height: 46px;
@@ -296,19 +289,19 @@ form > h2 {
 #section-popular img {
     grid-column: 1 / 2;
     height: 135px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
 
 #section-popular figcaption {
     grid-column: 2 / 3;
     min-width: 130.5px;
-    max-width: 170px;
+    max-width: 169.5px;
 }
 
 #section-popular h2 {
     font-size: 1.5rem;
-    margin: 12px 0px 10px 0px;
+    margin: 12px 0 10px 0;
     line-height: 17.5px;
 }
 
@@ -374,7 +367,7 @@ form > h2 {
 
 #section-accomodations h1 {
     line-height: 25px;
-    padding: 40px 0 5px 0px;
+    padding: 40px 0 5px 0;
 }
 
 /* Carte de la section hébergements */
@@ -389,7 +382,7 @@ form > h2 {
 .figure-accomodations img {
     height: 114px;
     object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
 }
 
 .figure-accomodations figcaption {
@@ -419,7 +412,7 @@ form > h2 {
 /* Fin de la section "Hébergements" */
 #end-accomodations {
     grid-area: accomodations-end;
-    padding: 18px 0px 23px 0px;
+    padding: 18px 0 23px 0;
     line-height: 25px;
 }
 
@@ -484,7 +477,7 @@ aside article {
 .figure-activities img {
     height: 134px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
 }
 
 .figure-activities h2 {
