@@ -1,11 +1,11 @@
 @media screen and (max-width: 1210px) {
     h2:not(#section-search h2, #end-accomodations) {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-weight: 700;
     }
     #section-accomodations p,
     #section-popular p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -125,6 +125,25 @@ form > h2 {
     row-gap: 32px;
 }
 
+/* Partie header de la section "POPULAIRES" */
+#section-popular header {
+    margin-bottom: -3px;
+}
+
+#section-popular h1 {
+    line-height: 30px;
+}
+
+/* Carte de la section populaires */
+#section-popular figcaption {
+    min-width: 130.5px;
+    max-width: 170px;
+}
+
+#section-popular div {
+    position: bottom;
+}
+
 /* SECTION HEBERGEMENTS */
 #section-accomodations {
     grid-column: 1 / 2;
@@ -149,6 +168,11 @@ form > h2 {
 
 .figure-accomodations img {
     width: 100%;
+}
+
+.figure-accomodations figcaption {
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #end-accomodations {

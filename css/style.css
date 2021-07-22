@@ -13,6 +13,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1;
+    min-width: 320px;
 }
 
 h1 {
@@ -302,6 +303,8 @@ form > h2 {
 #section-popular figcaption {
     grid-column: 2 / 3;
     max-height: 135px;
+    min-width: 130.5px;
+    max-width: 170px;
 }
 
 #section-popular h2 {
@@ -390,22 +393,27 @@ form > h2 {
     border-radius: 15px 15px 0px 0px;
 }
 
+.figure-accomodations figcaption {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .figure-accomodations h2 {
     font-size: 1.55rem;
-    padding: 10px 10px 5px 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     line-height: 20px;
 }
 
 .figure-accomodations p {
     font-size: 1.35rem;
-    padding: 0 0 5px 10px;
+    padding-bottom: 5px;
     line-height: 15px;
 }
 
 .figure-accomodations div {
     font-size: 1.15rem;
     letter-spacing: -1px;
-    padding-left: 10px;
     line-height: 20px;
 }
 
