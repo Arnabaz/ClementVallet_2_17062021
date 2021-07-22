@@ -1,8 +1,20 @@
+@media screen and (max-width: 1210px) {
+    h2:not(#section-search h2, #end-accomodations) {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    #section-accomodations p,
+    #section-popular p {
+        font-size: 1rem;
+    }
+}
+
 main {
     display: grid;
-    grid-template-columns: 880px 420px;
-    column-gap: 40px;
-    padding: 0 50px;
+    grid-template-columns: 65.67% 31.34%;
+    grid-template-rows: 625px;
+    column-gap: 2.99%;
+    padding: 0 3.5%;
 }
 
 /* HEADER */
@@ -25,7 +37,7 @@ header nav {
 #header-accomodations,
 #header-activities {
     line-height: 118px;
-    border-top: 2px solid var(--lightgrey);
+    border-top: 2px solid var(--grey);
     border-bottom: none;
     padding-bottom: 0px;
 }
@@ -105,10 +117,12 @@ form > h2 {
 
 /* SECTION POPULAIRES */
 #section-popular {
-    background-color: var(--lightgrey);
+    background-color: var(--grey);
     border-radius: 25px;
     grid-column: 2 / 3;
     grid-row: unset;
+    padding: 40px 9.28%;
+    row-gap: 32px;
 }
 
 /* SECTION HEBERGEMENTS */
@@ -116,67 +130,104 @@ form > h2 {
     grid-column: 1 / 2;
     grid-row: unset;
     border-radius: 25px;
+    background-color: var(--grey);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "accomodations-header accomodations-header accomodations-header"
+        "accomodations-article-1 accomodations-article-2 accomodations-article-3"
+        "accomodations-article-4 accomodations-article-5 accomodations-article-6"
+        "accomodations-end accomodations-end accomodations-end";
+    column-gap: 3.4%;
+    row-gap: 30px;
+    padding: 40px 4.6%;
+}
+
+#section-accomodations h1 {
+    line-height: 25px;
+    padding: 0px 0 5px 0px;
+}
+
+.figure-accomodations img {
+    width: 100%;
+}
+
+#end-accomodations {
+    padding: 10px 0px 7px 0px;
+    line-height: 20px;
 }
 
 /* SECTION ACTIVITES */
 aside {
-    display: grid;
-    grid-template-areas:
-        "aside-header aside-header aside-header aside-header"
-        "aside-article-1 aside-article-2 aside-article-4 aside-article-5"
-        "aside-article-1 aside-article-3 aside-article-4 aside-article-6";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 48px 238px 210px;
+    grid-template-areas: none;
     row-gap: 0px;
-    column-gap: 20px;
-    background-color: white;
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-    padding-bottom: 60px;
+    column-gap: 3%;
+    padding: 60px 3.5%;
 }
 
 /* Partie header de la section aside */
 aside header {
-    grid-area: aside-header;
-    line-height: 107px;
-    margin-bottom: -20px;
+    grid-area: 1 / 1 / 2 / 5;
+    line-height: unset;
+    margin-bottom: 0;
+}
+
+aside h1 {
+    line-height: 25px;
+    padding-bottom: 23px;
 }
 
 #aside-article-1 {
-    grid-area: aside-article-1;
-    height: 390px;
-    object-fit: cover;
+    grid-area: 2 / 1 / 4 / 2;
+    height: 448px;
 }
 
 #aside-article-2 {
-    grid-area: aside-article-2;
+    grid-area: 2 / 2 / 3 / 3;
+    height: 238px;
 }
 
 #aside-article-3 {
-    grid-area: aside-article-3;
+    grid-area: 3 / 2 / 4 / 3;
+    margin-top: 45px;
+    height: 165px;
 }
 
 #aside-article-4 {
-    grid-area: aside-article-4;
+    grid-area: 2 / 3 / 4 / 4;
+    height: 448px;
 }
 
 #aside-article-5 {
-    grid-area: aside-article-5;
+    grid-area: 2 / 4 / 3 / 5;
+    margin-bottom: 40px;
+    height: 198px;
 }
 
 #aside-article-6 {
-    grid-area: aside-article-6;
+    grid-area: 3 / 4 / 4 / 5;
+    height: 210px;
 }
 
 /* Carte de la section aside */
-.figure-activities {
-    background-color: white;
-    border-radius: var(--radius);
-    box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
-    cursor: pointer;
+#aside-article-1 img,
+#aside-article-4 img {
+    height: 390px;
 }
 
-.figure-activities img {
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;
+#aside-article-2 img {
+    height: 181px;
+}
+
+#aside-article-3 img {
+    height: 109px;
+}
+#aside-article-5 img {
+    height: 140px;
+}
+#aside-article-6 img {
+    height: 153px;
 }
 
 .figure-activities h2 {
@@ -187,7 +238,7 @@ aside header {
 
 /* FOOTER */
 #footer-about + ul {
-    padding-bottom: 42px;
+    padding-bottom: 43px;
 }
 
 footer {

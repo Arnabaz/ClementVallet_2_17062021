@@ -246,10 +246,10 @@ form > h2 {
         "popular-article-1"
         "popular-article-2"
         "popular-article-3";
-    row-gap: 20px;
+    row-gap: 10px;
     background-color: var(--grey);
     grid-row: 1 / 2;
-    padding: 20px;
+    padding: 40px 20px 36px 20px;
 }
 
 /* Partie header de la section "POPULAIRES" */
@@ -259,6 +259,10 @@ form > h2 {
     align-items: center;
     grid-area: popular-header;
     font-size: 2.2rem;
+}
+
+#section-popular h1 {
+    line-height: 40px;
 }
 
 /* Carte de la section populaires */
@@ -284,48 +288,46 @@ form > h2 {
 
 #section-popular figure {
     display: grid;
-    grid-template-columns: 127px 1fr;
+    grid-template-columns: 33% 50%;
+    column-gap: 5%;
 }
 
 #section-popular img {
     grid-column: 1 / 2;
-    width: 127px;
-    height: 138px;
-    border-radius: 20px 0px 0px 20px;
+    height: 135px;
+    border-radius: 15px 0px 0px 15px;
     object-fit: cover;
 }
 
 #section-popular figcaption {
     grid-column: 2 / 3;
-    padding: 0px 45px 0px 20px;
-    line-height: 1.1;
+    max-height: 135px;
 }
 
 #section-popular h2 {
     font-size: 1.5rem;
-    padding-top: 12px;
+    margin: 12px 0px 10px 0px;
+    line-height: 17.5px;
 }
 
 #section-popular p {
     font-size: 1.35rem;
-    line-height: 35px;
+    line-height: 15px;
+    font-weight: 400;
 }
 
 #section-popular div {
-    padding-top: 30px;
+    margin-top: 40px;
     font-size: 1.1rem;
     letter-spacing: -1px;
-    line-height: 28px;
+    line-height: 15px;
 }
 
 /* SECTION HEBERGEMENTS */
 #section-accomodations {
     grid-row: 2 / 3;
     background-color: var(--white);
-    width: 100%;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto repeat(6, 1fr) auto;
     grid-template-areas:
         "accomodations-header"
         "accomodations-article-1"
@@ -366,52 +368,52 @@ form > h2 {
 /* Partie header de la section "Hébergements" */
 #section-accomodations header {
     grid-area: accomodations-header;
-    width: 100%;
-    line-height: 90px;
-    margin-bottom: -12px;
+}
+
+#section-accomodations h1 {
+    line-height: 25px;
+    padding: 40px 0 5px 0px;
 }
 
 /* Carte de la section hébergements */
 #section-accomodations article {
-    width: 100%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 3px 8px 1px silver;
     cursor: pointer;
+    padding: 5px;
 }
 
 .figure-accomodations img {
-    width: 100%;
     height: 114px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .figure-accomodations h2 {
     font-size: 1.55rem;
-    padding-left: 10px;
-    line-height: 30px;
+    padding: 10px 10px 5px 10px;
+    line-height: 20px;
 }
 
 .figure-accomodations p {
     font-size: 1.35rem;
-    padding-left: 10px;
-    line-height: 20px;
+    padding: 0 0 5px 10px;
+    line-height: 15px;
 }
 
 .figure-accomodations div {
     font-size: 1.15rem;
     letter-spacing: -1px;
     padding-left: 10px;
-    padding-bottom: 10px;
     line-height: 20px;
 }
 
 /* Fin de la section "Hébergements" */
 #end-accomodations {
     grid-area: accomodations-end;
-    width: 100%;
-    line-height: 78px;
+    padding: 18px 0px 23px 0px;
+    line-height: 25px;
 }
 
 /* SECTION ACTIVITES */
@@ -425,18 +427,27 @@ aside {
         "aside-article-4"
         "aside-article-5"
         "aside-article-6";
-    row-gap: 20px;
+    row-gap: 22px;
     background-color: var(--white);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+    padding: 25px 20px 50px 20px;
 }
 
 /* Partie header de la section aside */
 aside header {
     grid-area: aside-header;
-    line-height: 107px;
-    margin-bottom: -20px;
+}
+
+aside h1 {
+    line-height: 30px;
+    padding-bottom: 3px;
+}
+
+/* Carte de la section aside */
+aside article {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 3px 8px 1px silver;
+    cursor: pointer;
 }
 
 #aside-article-1 {
@@ -463,16 +474,7 @@ aside header {
     grid-area: aside-article-6;
 }
 
-/* Carte de la section aside */
-.figure-activities {
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 1px 3px 8px 1px silver;
-    cursor: pointer;
-}
-
 .figure-activities img {
-    width: 100%;
     height: 134px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -481,7 +483,7 @@ aside header {
 .figure-activities h2 {
     font-size: 1.6rem;
     line-height: 56px;
-    padding-left: 18px;
+    padding: 0 18px;
 }
 
 /* FOOTER */

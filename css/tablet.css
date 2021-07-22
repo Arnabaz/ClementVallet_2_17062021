@@ -9,7 +9,6 @@ aside {
         "aside-article-5 aside-article-4";
     row-gap: 0px;
     column-gap: 20px;
-    background-color: var(--lightgrey);
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 50px;
@@ -47,13 +46,6 @@ aside header {
 }
 
 /* Carte de la section aside */
-.figure-activities {
-    background-color: white;
-    border-radius: var(--radius);
-    box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
-    cursor: pointer;
-}
-
 .figure-activities img {
     width: 100%;
     height: auto;
@@ -62,7 +54,6 @@ aside header {
 }
 
 .figure-activities h2 {
-    width: calc(100% - 18px);
     font-size: 1.6rem;
     line-height: 56px;
     padding-left: 18px;
