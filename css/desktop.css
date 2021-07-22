@@ -68,28 +68,6 @@ header nav {
 }
 
 /* Partie principale de la section de recherche */
-/* Sous-partie bouton recherche */
-#search-button i:not(label i) {
-    display: none;
-}
-
-#search-button input {
-    max-width: 255px;
-}
-
-#search-button button {
-    width: 135px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    background-color: var(--blue);
-    font-size: 1.8rem;
-}
-
-#search-button span {
-    display: inline;
-    font-weight: 600;
-}
-
 /* Partie filtres */
 form > h2 {
     display: inline-block;
@@ -193,54 +171,22 @@ form > h2 {
 aside {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 48px 238px 210px;
-    grid-template-areas: none;
+    grid-template-areas:
+        "aside-header aside-header aside-header aside-header"
+        "aside-article-1 aside-article-2 aside-article-4 aside-article-5"
+        "aside-article-1 aside-article-3 aside-article-4 aside-article-6";
     row-gap: 0px;
     column-gap: 3%;
     padding: 60px 3.5%;
 }
 
-/* Partie header de la section aside */
-aside header {
-    grid-area: 1 / 1 / 2 / 5;
-    line-height: unset;
-    margin-bottom: 0;
-}
-
-aside h1 {
-    line-height: 25px;
-    padding-bottom: 23px;
-}
-
-#aside-article-1 {
-    grid-area: 2 / 1 / 4 / 2;
-    height: 448px;
-}
-
-#aside-article-2 {
-    grid-area: 2 / 2 / 3 / 3;
-    height: 238px;
-}
-
+/* Carte de la section populaires */
 #aside-article-3 {
-    grid-area: 3 / 2 / 4 / 3;
     margin-top: 45px;
-    height: 165px;
-}
-
-#aside-article-4 {
-    grid-area: 2 / 3 / 4 / 4;
-    height: 448px;
 }
 
 #aside-article-5 {
-    grid-area: 2 / 4 / 3 / 5;
     margin-bottom: 40px;
-    height: 198px;
-}
-
-#aside-article-6 {
-    grid-area: 3 / 4 / 4 / 5;
-    height: 210px;
 }
 
 /* Carte de la section aside */
@@ -261,12 +207,6 @@ aside h1 {
 }
 #aside-article-6 img {
     height: 153px;
-}
-
-.figure-activities h2 {
-    font-size: 1.6rem;
-    line-height: 56px;
-    padding-left: 18px;
 }
 
 /* FOOTER */

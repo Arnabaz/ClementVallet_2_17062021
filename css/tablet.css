@@ -1,204 +1,126 @@
-/* HEADER */
-#header-logo {
-    grid-area: header-logo;
-    margin-left: 50px;
-}
-
-#header-sign {
-    padding-right: 75px;
-}
+/* ENTRE 426px et 620px */
 
 /* SECTION RECHERCHE */
-#section-search {
-    padding: 0 50px;
+/* Sous-partie bouton recherche */
+#search-button i:not(label i) {
+    display: none;
 }
 
-/* SECTION POPULAIRES */
-#section-popular {
-    grid-template-areas:
-        "popular-header popular-header"
-        "popular-article-1 popular-article-2"
-        "popular-article-3 popular-article-2";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 48px 145px 145px;
-    row-gap: 10px;
-    column-gap: 10px;
-    padding: 40px 50px 36px 50px;
+#search-button input {
+    max-width: 255px;
 }
 
-/* Carte de la section populaires */
-#popular-article-2 img {
-    height: 290px;
+#search-button button {
+    width: 135px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: var(--blue);
+    font-size: 1.8rem;
 }
 
-#popular-article-2 div {
-    margin-top: 195px;
+#search-button span {
+    display: inline;
+    font-weight: 600;
 }
 
-/* SECTION HEBERGEMENTS */
-#section-accomodations {
-    grid-row: 2 / 3;
-    background-color: var(--white);
-    display: grid;
-    grid-template-areas:
-        "accomodations-header"
-        "accomodations-article-1"
-        "accomodations-article-2"
-        "accomodations-article-3"
-        "accomodations-article-4"
-        "accomodations-article-5"
-        "accomodations-article-6"
-        "accomodations-end";
-    row-gap: 12px;
-    padding: 0 50px;
-}
+/* ENTRE 621px et 1023px */
+@media screen and (min-width: 620px) {
+    /* HEADER */
+    #header-logo {
+        margin-left: 50px;
+    }
 
-#accomodations-article-1 {
-    grid-area: accomodations-article-1;
-}
+    #header-sign {
+        padding-right: 75px;
+    }
 
-#accomodations-article-2 {
-    grid-area: accomodations-article-2;
-}
+    /* SECTION RECHERCHE */
+    #section-search {
+        padding: 0 50px;
+    }
 
-#accomodations-article-3 {
-    grid-area: accomodations-article-3;
-}
+    /* SECTION POPULAIRES */
+    #section-popular {
+        grid-template-areas:
+            "popular-header popular-header"
+            "popular-article-1 popular-article-2"
+            "popular-article-3 popular-article-2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 48px 145px 145px;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 40px 50px 36px 50px;
+    }
 
-#accomodations-article-4 {
-    grid-area: accomodations-article-4;
-}
+    /* Carte de la section populaires */
+    #popular-article-2 img {
+        height: 290px;
+    }
 
-#accomodations-article-5 {
-    grid-area: accomodations-article-5;
-}
+    #popular-article-2 div {
+        margin-top: 195px;
+    }
 
-#accomodations-article-6 {
-    grid-area: accomodations-article-6;
-}
+    /* SECTION HEBERGEMENTS */
+    #section-accomodations {
+        grid-row: 2 / 3;
+        background-color: var(--white);
+        grid-template-areas:
+            "accomodations-header accomodations-header"
+            "accomodations-article-1 accomodations-article-2"
+            "accomodations-article-3 accomodations-article-4"
+            "accomodations-article-5 accomodations-article-6"
+            "accomodations-end accomodations-end";
+        row-gap: 12px;
+        column-gap: 12px;
+        padding: 0 50px;
+    }
 
-/* Partie header de la section "Hébergements" */
-#section-accomodations header {
-    grid-area: accomodations-header;
-}
+    /* SECTION ACTIVITES */
+    aside {
+        grid-template-areas:
+            "aside-header aside-header"
+            "aside-article-1 aside-article-2"
+            "aside-article-1 aside-article-3"
+            "aside-article-6 aside-article-4"
+            "aside-article-5 aside-article-4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 48px 190px 190px;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 25px 50px 50px 50px;
+    }
 
-#section-accomodations h1 {
-    line-height: 25px;
-    padding: 40px 0 5px 0px;
-}
+    /* Partie header de la section aside */
+    aside header {
+        line-height: unset;
+        margin-bottom: 0;
+    }
 
-/* Carte de la section hébergements */
-#section-accomodations article {
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 1px 3px 8px 1px silver;
-    cursor: pointer;
-    padding: 5px;
-}
+    aside h1 {
+        line-height: 25px;
+        padding-bottom: 23px;
+    }
 
-.figure-accomodations img {
-    height: 114px;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-}
+    /* Carte de la section aside */
+    #aside-article-1 img,
+    #aside-article-4 img {
+        height: 334px;
+    }
 
-.figure-accomodations figcaption {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    #aside-article-2 img,
+    #aside-article-3 img,
+    #aside-article-5 img,
+    #aside-article-6 img {
+        height: 134px;
+    }
 
-.figure-accomodations h2 {
-    font-size: 1.55rem;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    line-height: 20px;
-}
+    /* FOOTER */
+    footer h1 {
+        padding-left: 50px;
+    }
 
-.figure-accomodations p {
-    font-size: 1.35rem;
-    padding-bottom: 5px;
-    line-height: 15px;
-}
-
-.figure-accomodations div {
-    font-size: 1.15rem;
-    letter-spacing: -1px;
-    line-height: 20px;
-}
-
-/* Fin de la section "Hébergements" */
-#end-accomodations {
-    grid-area: accomodations-end;
-    padding: 18px 0px 23px 0px;
-    line-height: 25px;
-}
-
-/* SECTION ACTIVITES */
-aside {
-    display: grid;
-    grid-template-areas:
-        "aside-header aside-header"
-        "aside-article-1 aside-article-2"
-        "aside-article-1 aside-article-3"
-        "aside-article-6 aside-article-4"
-        "aside-article-5 aside-article-4";
-    row-gap: 0px;
-    column-gap: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-}
-
-/* Partie header de la section aside */
-aside header {
-    grid-area: aside-header;
-    line-height: 107px;
-    margin-bottom: -20px;
-}
-
-#aside-article-1 {
-    grid-area: aside-article-1;
-}
-
-#aside-article-2 {
-    grid-area: aside-article-2;
-}
-
-#aside-article-3 {
-    grid-area: aside-article-3;
-}
-
-#aside-article-4 {
-    grid-area: aside-article-4;
-}
-
-#aside-article-5 {
-    grid-area: aside-article-5;
-}
-
-#aside-article-6 {
-    grid-area: aside-article-6;
-}
-
-/* Carte de la section aside */
-.figure-activities img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.figure-activities h2 {
-    font-size: 1.6rem;
-    line-height: 56px;
-    padding-left: 18px;
-}
-
-/* FOOTER */
-footer h1 {
-    padding-left: 50px;
-}
-
-footer ul {
-    padding-left: 50px;
+    footer ul {
+        padding-left: 50px;
+    }
 }
