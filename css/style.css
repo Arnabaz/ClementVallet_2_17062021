@@ -471,6 +471,7 @@ aside article {
 
 #aside-article-4 {
     grid-area: aside-article-4;
+    white-space: nowrap;
 }
 
 #aside-article-5 {
