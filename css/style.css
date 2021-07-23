@@ -213,6 +213,9 @@ form > h2 {
 .filter-button:hover {
     background-color: var(--lightblue);
     color: var(--blue);
+    cursor: pointer;
+    transition: 0.5s box-shadow;
+    box-shadow: 1px 1px 4px 1px black;
 }
 
 /* Sous-partie infos de recherche */
