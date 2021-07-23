@@ -1,4 +1,4 @@
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1220px) {
     .figure-accomodations h2,
     .figure-activities h2,
     #section-popular h2 {
@@ -16,7 +16,7 @@ main {
     grid-template-columns: 65.67% 31.34%;
     grid-template-rows: 625px;
     column-gap: 2.99%;
-    padding: 0 3.5%;
+    padding: 0 50px;
 }
 
 /* HEADER */
@@ -110,7 +110,6 @@ form > h2 {
     grid-template-rows: unset;
     row-gap: 32px;
     column-gap: unset;
-
     padding: 40px 9.28%;
 }
 
@@ -124,11 +123,26 @@ form > h2 {
 }
 
 /* Carte de la section populaires */
-#popular-article-2 img {
+#popular-article-2 figure {
+    display: grid;
+    grid-template-columns: 33% 50%;
+    column-gap: 5%;
+}
+
+#popular-article-2 figcaption {
+    padding: 0 0px;
+    max-width: 169.5px;
+}
+
+#section-popular img {
     height: 135px;
 }
 
-#popular-article-2 div {
+#popular-article-2 img {
+    border-radius: 15px 0px 0px 15px;
+}
+
+#section-popular div {
     margin-top: 40px;
 }
 
@@ -146,7 +160,7 @@ form > h2 {
         "accomodations-end accomodations-end accomodations-end";
     column-gap: 3.4%;
     row-gap: 30px;
-    padding: 40px 50px;
+    padding: 40px 4.5%;
 }
 
 #section-accomodations h1 {
@@ -160,7 +174,6 @@ form > h2 {
 
 .figure-accomodations figcaption {
     padding-left: 8px;
-    white-space: nowrap;
 }
 
 #end-accomodations {
@@ -178,7 +191,7 @@ aside {
         "aside-article-1 aside-article-3 aside-article-4 aside-article-6";
     row-gap: 0;
     column-gap: 3%;
-    padding: 60px 3.5%;
+    padding: 60px 50px;
 }
 
 /* Carte de la section populaires */
@@ -224,6 +237,6 @@ footer {
         "footer-about-ul footer-accomodations-ul footer-assistance-ul";
 }
 
-footer h1 {
+footer h2 {
     padding-top: 40px;
 }

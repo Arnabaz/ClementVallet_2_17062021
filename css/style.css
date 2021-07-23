@@ -341,6 +341,7 @@ form > h2 {
         "accomodations-end";
     row-gap: 12px;
     padding: 0 20px;
+    white-space: nowrap;
 }
 
 #accomodations-article-1 {
@@ -437,6 +438,7 @@ aside {
     row-gap: 22px;
     background-color: var(--white);
     padding: 25px 20px 50px 20px;
+    white-space: nowrap;
 }
 
 /* Partie header de la section aside */
@@ -471,7 +473,6 @@ aside article {
 
 #aside-article-4 {
     grid-area: aside-article-4;
-    white-space: nowrap;
 }
 
 #aside-article-5 {
@@ -536,7 +537,7 @@ footer {
     background-color: var(--grey);
 }
 
-footer h1 {
+footer h2 {
     font-size: 1.8rem;
     font-weight: 700;
     padding-left: 30px;

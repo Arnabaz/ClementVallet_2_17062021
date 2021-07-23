@@ -1,4 +1,16 @@
-/* ENTRE 426px et 620px */
+/* ENTRE 535px et 620px */
+@media screen and (max-width: 620px) {
+    .figure-accomodations h2,
+    .figure-activities h2,
+    #section-popular h2 {
+        font-size: 1.3rem;
+    }
+
+    #section-accomodations p,
+    #section-popular p {
+        font-size: 1.1rem;
+    }
+}
 
 /* SECTION RECHERCHE */
 /* Sous-partie bouton recherche */
@@ -24,103 +36,118 @@
 }
 
 /* ENTRE 621px et 1023px */
-@media screen and (min-width: 620px) {
-    /* HEADER */
-    #header-logo {
-        margin-left: 50px;
-    }
+/* HEADER */
+#header-logo {
+    margin-left: 50px;
+}
 
-    #header-sign {
-        padding-right: 75px;
-    }
+#header-sign {
+    padding-right: 75px;
+}
 
-    /* SECTION RECHERCHE */
-    #section-search {
-        padding: 0 50px;
-    }
+/* SECTION RECHERCHE */
+#section-search {
+    padding: 0 50px;
+}
 
-    /* SECTION POPULAIRES */
-    #section-popular {
-        grid-template-areas:
-            "popular-header popular-header"
-            "popular-article-1 popular-article-2"
-            "popular-article-3 popular-article-2";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 48px 145px 145px;
-        row-gap: 10px;
-        column-gap: 10px;
-        padding: 40px 50px 36px 50px;
-    }
+/* SECTION POPULAIRES */
+#section-popular {
+    grid-template-areas:
+        "popular-header popular-header"
+        "popular-article-1 popular-article-2"
+        "popular-article-3 popular-article-2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 48px 115px 115px;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 40px 50px 36px 50px;
+}
 
-    /* Carte de la section populaires */
-    #popular-article-2 img {
-        height: 290px;
-    }
+/* Carte de la section populaires */
+#popular-article-2 figure {
+    display: flex;
+    flex-direction: column;
+}
 
-    #popular-article-2 div {
-        margin-top: 195px;
-    }
+#popular-article-2 figcaption {
+    padding: 0 10px;
+    max-width: 213px;
+}
 
-    /* SECTION HEBERGEMENTS */
-    #section-accomodations {
-        grid-row: 2 / 3;
-        background-color: var(--white);
-        grid-template-areas:
-            "accomodations-header accomodations-header"
-            "accomodations-article-1 accomodations-article-2"
-            "accomodations-article-3 accomodations-article-4"
-            "accomodations-article-5 accomodations-article-6"
-            "accomodations-end accomodations-end";
-        row-gap: 12px;
-        column-gap: 12px;
-        padding: 0 50px;
-    }
+#popular-article-1 img,
+#popular-article-3 img {
+    height: 105px;
+}
 
-    /* SECTION ACTIVITES */
-    aside {
-        grid-template-areas:
-            "aside-header aside-header"
-            "aside-article-1 aside-article-2"
-            "aside-article-1 aside-article-3"
-            "aside-article-6 aside-article-4"
-            "aside-article-5 aside-article-4";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 48px 190px 190px;
-        row-gap: 10px;
-        column-gap: 10px;
-        padding: 25px 50px 50px 50px;
-    }
+#popular-article-2 img {
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
 
-    /* Partie header de la section aside */
-    aside header {
-        line-height: unset;
-        margin-bottom: 0;
-    }
+#section-popular div {
+    margin-top: 10px;
+}
 
-    aside h1 {
-        line-height: 25px;
-        padding-bottom: 23px;
-    }
+/* SECTION HEBERGEMENTS */
+#section-accomodations {
+    grid-row: 2 / 3;
+    background-color: var(--white);
+    grid-template-areas:
+        "accomodations-header accomodations-header"
+        "accomodations-article-1 accomodations-article-2"
+        "accomodations-article-3 accomodations-article-4"
+        "accomodations-article-5 accomodations-article-6"
+        "accomodations-end accomodations-end";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 12px;
+    padding: 0 50px;
+}
 
-    /* Carte de la section aside */
-    #aside-article-1 img,
-    #aside-article-4 img {
-        height: 334px;
-    }
+/* SECTION ACTIVITES */
+aside {
+    grid-template-areas:
+        "aside-header aside-header"
+        "aside-article-1 aside-article-2"
+        "aside-article-1 aside-article-3"
+        "aside-article-6 aside-article-4"
+        "aside-article-5 aside-article-4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 48px 190px 190px;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 25px 50px 50px 50px;
+}
 
-    #aside-article-2 img,
-    #aside-article-3 img,
-    #aside-article-5 img,
-    #aside-article-6 img {
-        height: 134px;
-    }
+/* Partie header de la section aside */
+aside header {
+    line-height: unset;
+    margin-bottom: 0;
+}
 
-    /* FOOTER */
-    footer h1 {
-        padding-left: 50px;
-    }
+aside h1 {
+    line-height: 25px;
+    padding-bottom: 23px;
+}
 
-    footer ul {
-        padding-left: 50px;
-    }
+/* Carte de la section aside */
+#aside-article-1 img,
+#aside-article-4 img {
+    height: 334px;
+}
+
+#aside-article-2 img,
+#aside-article-3 img,
+#aside-article-5 img,
+#aside-article-6 img {
+    height: 134px;
+}
+
+/* FOOTER */
+footer h2 {
+    padding-left: 50px;
+}
+
+footer ul {
+    padding-left: 50px;
 }
