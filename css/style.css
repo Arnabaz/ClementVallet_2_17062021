@@ -160,18 +160,19 @@ header nav {
     padding: 15px;
 }
 
-#search-button button {
+.search-button {
     width: 50px;
     height: 50px;
     border-radius: 15px;
     background-color: var(--blue);
-    color: white;
+    color: var(--white);
     cursor: pointer;
     font-size: 1.7rem;
     border: none;
     margin-left: -15px;
 }
 
+/* Masquer le "Rechercher" du bouton de recherche */
 #search-button span {
     display: none;
 }
@@ -206,6 +207,12 @@ form > h2 {
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0 20px 0 10px;
+}
+
+/* Effet de survol sur les filtres */
+.filter-button:hover {
+    background-color: var(--lightblue);
+    color: var(--blue);
 }
 
 /* Sous-partie infos de recherche */
